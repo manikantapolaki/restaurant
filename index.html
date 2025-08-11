@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to Palasa Specials</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Palasa Specials</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <a href="#Reservation">Reservation</a>
+        <a href="#Blog">Blog</a>
+        <a href="#Location">Location</a>
+        <a href="#reserve" class="btn-cta">Reserve Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Palasa Specials</h2>
+      <p>Experience the finest flavors and cozy atmosphere.</p>
+      <a href="#reserve" class="btn-primary">Book a Table</a>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h3>About Us</h3>
+    <p>At Palasa Specials, we craft delicious meals with fresh, local ingredients. Join us for an unforgettable dining experience!</p>
+  </section>
+
+  <section id="menu" class="container">
+    <h3>Our Menu Highlights</h3>
+    <div class="menu-items" id="menu-items">
+      <!-- JS will dynamically populate menu items -->
+      <div class="menu-category">
+        <h4>Biryani Specials</h4>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="https://ministryofcurry.com/wp-content/uploads/2024/06/chicken-biryani-5.jpg" alt="Chicken Biryani">
+            <h5>Chicken Biryani</h5>
+            <p>Spicy and flavorful rice dish with tender chicken pieces.</p>
+          </div>
+          <div class="menu-card">
+            <img src="https://product-assets.faasos.io/eatsure/production/veg-biryani-online.jpeg" alt="Veg Biryani">
+            <h5>Veg Biryani</h5>
+            <p>Fresh vegetables blended with aromatic spices and basmati rice.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-category">
+        <h4>South Indian Tiffins</h4>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="https://miro.medium.com/v2/resize:fit:900/1*nfbDiVFxBQGys61H7X7B1A.jpeg" alt="Idly">
+            <h5>Idly</h5>
+            <p>Steamed rice cakes served with chutney and sambar.</p>
+          </div>
+          <div class="menu-card">
+            <img src="https://www.shutterstock.com/image-photo/side-view-isometric-angle-crispy-600nw-2600398075.jpg" alt="Dosa">
+            <h5>Dosa</h5>
+            <p>Thin crispy crepe served with a variety of chutneys and sambar.</p>
+          </div>
+          <div class="menu-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8aXt0ynT8ogowM46PWdk0AH9BSxCYBig9w&s" alt="Puri">
+            <h5>Puri</h5>
+            <p>Comforting rice and lentil dish topped with ghee and spices.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="reserve" class="container reservation">
+    <h3>Reserve a Table</h3>
+    <form id="reservation-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="date" id="date" required />
+      <input type="time" id="time" required />
+      <button type="submit" class="btn-primary">Book Now</button>
+    </form>
+    <p id="reservation-msg"></p>
+  </section>
+
+  <footer class="container" id="contact">
+    <p>Contact us: contact@palasaspecials.com | +91 1234567890</p>
+    <p>123 Food Street, Flavor Town</p>
+    <p>All Rights Reserved:&copy;chatgpt Babai</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
